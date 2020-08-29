@@ -1,12 +1,25 @@
 <div>
   <table [class]="tableClass">
-    <tr><td style="{{setStyle(colors.red)}}"></td></tr>
-    <tr><td style="{{setStyle(colors.orange)}}"></td></tr>
-    <tr><td style="{{setStyle(colors.yellow)}}"></td></tr>
-    <tr><td [style]="setStyle(colors.green)" ></td></tr>
-    <tr><td [style]="setStyle(colors.blue)" ></td></tr>
-    <tr><td [style]="setStyle(colors.indigo)" ></td></tr>
-    <tr><td [style]="setStyle(colors.violet)" ></td></tr>
+    <tr>
+      <td style="{{'background-color:' + colors.red}}">Код цвета {{colors.red}}</td>
+    </tr>
+    <tr>
+      <td style="{{'background-color:' + colors.orange}}">Код цвета {{colors.orange}}</td>
+    </tr>
+    <tr>
+      <td style="{{'background-color:' + colors.yellow}}">Код цвета {{colors.yellow}}</td></tr>
+    <tr>
+      <td [style.background-color]="colors.green">Код цвета {{colors.green}}</td>
+    </tr>
+    <tr>
+      <td [style.background-color]="colors.blue">Код цвета {{colors.blue}}</td><
+      /tr>
+    <tr>
+    <td [style.background-color]="colors.indigo" >Код цвета {{colors.indigo}}</td>
+  </tr>
+    <tr>
+      <td [style.background-color]="colors.violet" >Код цвета {{colors.violet}}</td>
+    </tr>
   </table>
   <button (click)="changeClass()">Нажми меня</button>
 </div>

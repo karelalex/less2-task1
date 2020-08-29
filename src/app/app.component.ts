@@ -17,7 +17,6 @@ export class AppComponent {
     violet: 'rgb(139, 0, 255)'
   };
   tableClass = 'normal-table';
-  setStyle = (color): string => `background-color: ${color}`;
   changeClass = () => {
     this.tableClass = this.tableClass === 'normal-table' ? 'hidden-table' : 'normal-table';
   }
