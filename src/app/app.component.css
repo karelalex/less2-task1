@@ -1,0 +1,12 @@
+.hidden-table {
+  visibility: collapse;
+}
+
+.normal-table td {
+  width: 200px;
+  height: 40px;
+}
+
+.normal-table {
+  visibility: visible;
+}
